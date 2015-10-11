@@ -34,6 +34,11 @@ def filterTags(attrs):
 			tags.update({'boundary':'protected_area'})
 			tags.update({'protection_title':'Municipal Park'})
 			tags.update({'protect_class':'6'})
+		elif attrs['TYPE_'] == "National":
+			tags.update({'leisure':'park'})
+			tags.update({'boundary':'national_park'})
+			tags.update({'protection_title':'National Park'})
+			tags.update({'protect_class':'6'})
 		elif attrs['TYPE_'] == "Neighborhood":
 			tags.update({'leisure':'park'})
 			tags.update({'boundary':'protected_area'})
@@ -43,6 +48,11 @@ def filterTags(attrs):
 			tags.update({'leisure':'nature_reserve'})
 			tags.update({'boundary':'protected_area'})
 			tags.update({'protection_title':'Neighborhood Conservation Area'})
+			tags.update({'protect_class':'6'})
+		elif attrs['TYPE_'] == "Recreational":
+			tags.update({'leisure':'park'})
+			tags.update({'boundary':'protected_area'})
+			tags.update({'protection_title':'Recreational Park'})
 			tags.update({'protect_class':'6'})
 		elif attrs['TYPE_'] == "Regional":
 			tags.update({'leisure':'park'})
